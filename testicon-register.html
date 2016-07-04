@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Lexicon</a>
+          <a class="navbar-brand" href="#">Testicon</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -50,15 +50,15 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">My profile</a></li>
+                <li><a href="#">Edit my profile</a></li>
                 <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header">Tests</li>
+                <li><a href="#">My tests</a></li>
+                <li><a href="#">Passed tests</a></li>
               </ul>
             </li>
           </ul>
@@ -101,6 +101,15 @@
 					<small class="text-muted">Mailing address.</small>
 				</fieldset>
 				<fieldset class="form-group">
+					<label for="registrationCountrySelect">Country:</label>
+					<select class="form-control" id="registrationCountrySelect">
+						<option>Sweden</option>
+						<option>Denmark</option>
+						<option>Norway</option>
+						<option>Finland</option>
+					</select>
+				</fieldset>
+				<fieldset class="form-group">
 					<label for="exampleInputPersonalCodeNumber">Personal code number</label>
 					<input type="text" class="form-control" id="registrationPersonalCodeNumber" placeholder="Personal code number">
 					<small class="text-muted">Personal code number. 12 digits.</small>
@@ -139,6 +148,11 @@
 					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
 					<small class="text-muted">We'll never share your email with anyone else.</small>
 				</fieldset>
+				<fieldset class="form-group">
+					<label for="exampleInputEmail1Confirm">Confirm email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1Confirm" placeholder="Enter email">
+					<small class="text-muted">Re-enter your e-mail address.</small>
+				</fieldset>
 				
 				<fieldset class="form-group">
 					<label for="exampleInputCompany">Company</label>
@@ -149,6 +163,11 @@
 				<fieldset class="form-group">
 					<label for="exampleInputPassword1">Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<label for="exampleInputPassword1Confirm">Confirm Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1Confirm" placeholder="Password">
 				</fieldset>
 				
 				<button type="submit" class="btn btn-primary">Submit</button>

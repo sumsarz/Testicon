@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,9 +12,10 @@
     <title>Lexicon</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
@@ -28,165 +29,184 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <!--<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>-->
   </head>
 
-  <body role="document">
+<body role="document">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Testicon</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Testicon</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Logout</a></li>
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="#">Edit my profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Tests</li>
+                            <li><a href="#">My tests</a></li>
+                            <li><a href="#">Passed tests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Logout</a></li>
-                <li><a href="#">My profile</a></li>
-                <li><a href="#">Edit my profile</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Tests</li>
-                <li><a href="#">My tests</a></li>
-                <li><a href="#">Passed tests</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </nav>
 
     <div class="container theme-showcase" role="main">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Lexicon</h1>
-        <p>The legendary education company.</p>
-      </div>
-			
-			<div class="page-header">
-        <h1>Register</h1>
-				Fill out the form to register.
-      </div>
-			
-			<form>
-				<fieldset class="form-group">
-					<label for="registrationInputName">Name</label>
-					<input type="text" class="form-control" id="registrationName" placeholder="Enter your full name">
-					<small class="text-muted">Your full name, please.</small>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="registrationInputAddress">Address</label>
-					<input type="text" class="form-control" id="registrationAddress" placeholder="Your address">
-					<small class="text-muted">Your address.</small>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="exampleInputPostcode">Postcode</label>
-					<input type="text" class="form-control" id="registrationPostcode" placeholder="Postcode">
-					<small class="text-muted">Postcode.</small>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="exampleInputMailingAddress">Mailing address</label>
-					<input type="text" class="form-control" id="registrationMailingAddress" placeholder="Mailing address">
-					<small class="text-muted">Mailing address.</small>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="registrationCountrySelect">Country:</label>
-					<select class="form-control" id="registrationCountrySelect">
-						<option>Sweden</option>
-						<option>Denmark</option>
-						<option>Norway</option>
-						<option>Finland</option>
-					</select>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="exampleInputPersonalCodeNumber">Personal code number</label>
-					<input type="text" class="form-control" id="registrationPersonalCodeNumber" placeholder="Personal code number">
-					<small class="text-muted">Personal code number. 12 digits.</small>
-				</fieldset>
-				
-				<!-- Gender radio -->
-				<label>Gender</label>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadiosGender" id="optionsRadiosMale" value="option1">
-						Male
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadiosGender" id="optionsRadiosFemale" value="option2">
-						Female
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadiosGender" id="optionsRadiosHen" value="option3">
-						Hen
-					</label>
-				</div>
-				<!-- Gender radio ends -->
-				
-				<fieldset class="form-group">
-					<label for="exampleInputTelephoneNumber">Telephone number</label>
-					<input type="text" class="form-control" id="registrationTelephoneNumber" placeholder="Telephone number">
-					<small class="text-muted">Telephone number.</small>
-				</fieldset>
-				
-				<fieldset class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-					<small class="text-muted">We'll never share your email with anyone else.</small>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="exampleInputEmail1Confirm">Confirm email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1Confirm" placeholder="Enter email">
-					<small class="text-muted">Re-enter your e-mail address.</small>
-				</fieldset>
-				
-				<fieldset class="form-group">
-					<label for="exampleInputCompany">Company</label>
-					<input type="text" class="form-control" id="registrationCompany" placeholder="Company">
-					<small class="text-muted">Company name.</small>
-				</fieldset>
-				
-				<fieldset class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				</fieldset>
-				
-				<fieldset class="form-group">
-					<label for="exampleInputPassword1Confirm">Confirm Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1Confirm" placeholder="Password">
-				</fieldset>
-				
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Lexicon</h1>
+            <p>The legendary education company.</p>
+        </div>
+
+        <div class="page-header">
+            <h1>Register</h1>
+            Fill out the form to register.
+        </div>
+
+        <form data-toggle="validator" id="regForm">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="registrationInputName">Name</label>
+                    <input type="text" class="form-control" id="registrationName" placeholder="Enter your full name" required>
+                    <small class="text-muted">Your full name, please.</small>
+                </div>
+                <div class="form-group">
+                    <label for="registrationInputAddress">Address</label>
+                    <input type="text" class="form-control" id="registrationAddress" placeholder="Your address" required>
+                    <small class="text-muted">Your address.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPostcode">Postcode</label>
+                    <input type="text" class="form-control" id="registrationPostcode" placeholder="Postcode" required>
+                    <small class="text-muted">Postcode.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputMailingAddress">Mailing address</label>
+                    <input type="text" class="form-control" id="registrationMailingAddress" placeholder="Mailing address" required>
+                    <small class="text-muted">Mailing address.</small>
+                </div>
+                <div class="form-group">
+                    <label for="registrationCountrySelect">Country:</label>
+                    <select class="form-control" id="registrationCountrySelect">
+                        <option>Sweden</option>
+                        <option>Denmark</option>
+                        <option>Norway</option>
+                        <option>Finland</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPersonalCodeNumber">Personal code number</label>
+                    <input type="number" data-minlength="12" class="form-control" id="registrationPersonalCodeNumber" placeholder="Personal code number" required>
+                    <small class="text-muted">Personal code number. 12 digits.</small>
+                </div>
+
+                <!-- Gender radio -->
+                <label>Gender</label>
+                <div class="form-group">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadiosGender" id="optionsRadiosMale" value="option1" required>
+                            Male
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadiosGender" id="optionsRadiosFemale" value="option2" required>
+                            Female
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadiosGender" id="optionsRadiosHen" value="option3" required>
+                            Hen
+                        </label>
+                    </div>
+                </div>
+                <!-- Gender radio ends -->
+
+                <div class="form-group">
+                    <label for="exampleInputTelephoneNumber">Telephone number</label>
+                    <input type="text" class="form-control" id="registrationTelephoneNumber" placeholder="Telephone number" required>
+                    <small class="text-muted">Telephone number.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1Confirm">Confirm email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1Confirm"
+                           data-match="#exampleInputEmail1" placeholder="Enter email" required>
+                    <small class="text-muted">Re-enter your e-mail address.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputCompany">Company</label>
+                    <input type="text" class="form-control" id="registrationCompany" placeholder="Company" required>
+                    <small class="text-muted">Company name.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" data-minlength="6" class="form-control" id="exampleInputPassword1" 
+                           pattern="[a-zA-Z][a-zA-Z0-9]{5,25}" placeholder="Password" required>
+                    <small class="text-muted">Enter your password. Minnimum 6 characters. Letters and numbers, start with letter</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1Confirm">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1Confirm"
+                           data-match="#exampleInputPassword1" placeholder="Password" required>
+                    <small class="text-muted">Re-enter your password.</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
 
     </div> <!-- /container -->
-		
-		<footer class="footer">
-      <div class="container">
-        <p class="text-muted">Footer content here.</p>
-      </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Footer content here.</p>
+        </div>
     </footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+    <!--script>window.jQuery || document.write('<script-- src="../../assets/js/vendor/jquery.min.js"><\/script>')</!script-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
+    <!-->script type="text/javascript" src="js/jquery-2.0.0.min.js"></script-->
+    <!--script type="text/javascript" src="js/bootstrap.min.js"></script-->
+
+    <!--script type="text/javascript" src="js/validator.min.js"> </script-->
+	<!--script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+
+
+
+</body>
 </html>

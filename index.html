@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Form for registration">
+    <meta name="author" content="Ernst">
+    <link rel="icon" href="#">
+
+    <title>Testicon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+   <header class="nav-header">
+   <div class="container">
+
+<!--logo-nav-->           
+          <div class="brand">
+        
+              <img src="images/testicon-logo.png" alt="1">
+          
+<!--End of logo-nav--> 
+<!--login-form-->     
+        <form class="navbar-form navbar-right">
+          <h4><small>Don't Have an account - <a href="#about">Sign Up Here</a></small></h4>
+          <div class="form-group">
+          <input class="form-control" type="text" placeholder="Email">
+          </div>
+					<div class="form-group">
+					<input class="form-control" type="password" placeholder="Password">
+					</div>
+					<button class="btn btn-success" type="submit">Sign in</button>
+        </form>      
+ <!--Endlogin-form-->          
+  
+     </div>
+     </div> 			
+   </header>
+    
+<!--Nav Bar--> 
+<nav class="navbar navbar-default">
+      <div id="navbar-header" class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Testicon</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">My profile</a></li>
+                <li><a href="#">Edit my profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Tests</li>
+                <li><a href="#">My tests</a></li>
+                <li><a href="#">Passed tests</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+ <!--Search bar form-->
+        <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <button type="button" class="btn btn-default find">
+              <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </div>
+          </form>
+ <!--End Search Bar form-->
+
+            </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+<!--End Nav Bar--> 
+
+<!--slide Display Content-->
+    <div class="container theme-showcase" role="main">
+
+      <div class="page-header">
+        <h1>Welcome to Testicon</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, explicabo sint aliquam ut mollitia architecto aspernatur enim numquam, sapiente, quis ex voluptatibus. Eius saepe, dignissimos sint asperiores eos id odit.
+      </div>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container push-spaces">
+            <img src="images/office365.jpg" class="img-responsive">
+        </div>
+      </div>
+			
+
+    </div> <!-- /container -->
+
+<!--End slide Display Content-->   
+
+<div id="all-test" class="container">
+<section id="test-dropdown-m" class="col-md-9">
+
+ <h3>Find All your Test Here </h3> 
+ 
+ <div class="dropdown" class="col-md-3">
+
+
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Choose your Test Center
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Malmö</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Lund</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Helsingborg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Jönkoping</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Gothenburg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Stockholm</a></li>
+    </ul>
+
+
+
+
+
+
+
+<button class="btn btn-default dropdown-toggle"  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Kategori
+    <span class="caret"></span>
+  </button>
+  <!--ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><a href="#">Malmö</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Lund</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Helsingborg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Jönkoping</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Gothenburg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Stockholm</a></li>
+    </ul-->
+
+
+
+
+
+
+
+
+
+
+<button class="btn btn-default dropdown-toggle"  type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Subject
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+    <li><a href="#">Malmö</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Lund</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Helsingborg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Jönkoping</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Gothenburg</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Stockholm</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<section id="sidebar" class="col-md-3">
+<h1>hehe</h1>
+
+</section>  
+
+
+
+
+
+</div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <script src="js/bootstrap.min.js"></script></body>
+</html>

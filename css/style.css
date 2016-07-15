@@ -1,0 +1,28 @@
+
+.theme-showcase{
+    margin-top: 10px;
+}
+.nav-header{
+    background-color: #000000;
+    opacity: 0.9;
+    min-height: 110px;
+}
+.brand{
+    margin-top: 14px;
+}
+
+.navbar-form{
+    margin-top: 5px;
+}
+.jumbotron{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+.push-spaces{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
